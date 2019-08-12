@@ -95,7 +95,7 @@ app.post("/campgrounds", function (req, res) {
         name: name,
         image: image
     }
-    //campgrounds.push(newCampground);
+    campgrounds.push(newCampground);
     //get data from form
 
     //redirect back to campgrounds page
