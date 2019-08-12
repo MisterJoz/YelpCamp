@@ -1,8 +1,12 @@
-#YelpCamp
+# Style the campgrounds page
+Add a better header/title
+make campgrounds display in a grid
 
-* Add landing page
-* Add campgrounds page that lists all the campgrounds
+# Style the Navbar and Form
+Add a navbar to all templates
+Style the new campground form
 
-Each campground has:
-    *Name
-    *Image
+# Add Mongoose
+Install and configure mongoose
+Setup campground model
+Use campground model instead of routes
