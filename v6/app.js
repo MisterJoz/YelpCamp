@@ -22,7 +22,11 @@ passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
-
+//calls on every route
+app.use(function (req, res, next) {
+    res.locals.currentUser = req.user;
+    next();
+});
 mongoose.connect("mongodb://localhost/yelp_camp_v6");
 app.use(bodyParser.urlencoded({
     extended: true
@@ -38,6 +42,7 @@ app.get("/", function (req, res) {
 
 //INDEX - show all campgrounds
 app.get("/campgrounds", function (req, res) {
+    console.log(req.user);
     // Get all campgrounds from DB
     Campground.find({}, function (err, allCampgrounds) {
         if (err) {
