@@ -1,6 +1,6 @@
-#Editing Campgrounds
-* Add Method-Override
-* Add Edit Route for Campgroudns
-* Add Link to Edit page
-* Add Udpate Route
-* Fix $set problem
+## Authorization: Campgrounds
+ * user can only edit his/her campground
+ * user can only delete his/her campground
+ * Hide/Show edit and delete buttons
+
+ 
